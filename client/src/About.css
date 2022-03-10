@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+}
+
+.Aboutfirst-para .Aboutitems{
+    display: flex;
+    background-color: #ccccff;
+    flex-direction: row;
+}
+
+.Aboutfirst-para .Aboutcol-items-right img{
+    border-radius: 50%;  
+    width: 400px;
+    right: 0;
+    padding-left: 57px;
+    position: absolute;
+}
+
+.Aboutsecond-para{
+    width: 90%;
+    padding: 23px 0;
+}
+.Aboutsecond-para .Aboutitems{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.Aboutsecond-para .Aboutcol-items-left{
+    padding: 14px 24px;
+}
+
+.Aboutsecond-para .Aboutcol-items-right{
+    padding: 28px 34px;
+    letter-spacing:1.4px;
+    line-height: 1.3; 
+    text-align: justify;
+}
+
+.Aboutthird-para{
+    padding: 34px 0;
+}
+
+.Aboutthird-para .Aboutitems{
+    display: flex;
+    flex-direction: row;
+}
+
+.Aboutthird-para .Aboutitems .Aboutcol-items-left{
+    padding: 24px 34px;
+    position: relative;
+    letter-spacing: 1.4px;
+    line-height: 1.3; 
+    width: 90%;
+}
+
+
+.Aboutthird-para .Aboutcol-items-right img{
+    border-bottom-left-radius: 30%;
+    border-top-left-radius: 50% ; 
+    position: absolute;
+    width: 600px;
+    right: 0px;
+}
+
+.Aboutfourth-para{
+    padding: 34px 0;
+}
+.Aboutfourth-para .Aboutitems{
+    display: flex;
+    flex-direction: row;
+}
+
+.Aboutfourth-para .Aboutitems .Aboutcol-items-left img{
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 100% ;
+    border-top-left-radius: 5%;
+    position: absolute;
+    width: 600px;
+    left: 0px;
+   
+}
+
+.Aboutfourth-para .Aboutrow .Aboutcol-items-right{
+  
+    padding: 24px 34px;
+    position: relative;
+    letter-spacing: 1.4px;
+    line-height: 1.3; 
+    width: 100%; 
+}
+
+.Aboutfifth-para{
+    padding-bottom: 0px;
+    background-color: #ccccff;
+
+}
+
+
+.Aboutfifth-para .Aboutitems .Aboutslider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Aboutfifth-para .Aboutitems .Aboutcol-items-left{
+   
+    position: absolute;
+    left: 0px;
+    padding: 0;
+}
+
+.Aboutfifth-para .Aboutdesc{
+  
+    padding: 10px 23px;
+    position: relative;
+    letter-spacing: normal;
+    line-height: normal; 
+}
+
+
+.Aboutcol-items-left{
+position: relative;
+
+padding-left: 30%;
+width: 50%;
+}
+
+.Aboutcol-items-right{
+    position: relative;
+    width: 50%;
+    padding-right: 30%;
+}
+
+.Aboutfirst-para .Aboutrow p{
+font-size: 35px
+}
+ .Aboutrow-1 p{
+    font-size: 34px;
+    font-weight: normal;
+    padding-left: 204px;
+}
+
+.Aboutrow{
+    padding-left: 204px;
+}
+.Aboutrow p, .Aboutcol-items-right p, .Aboutrow-items p, .Aboutdesc p{
+    font-size: 18px;
+    margin: 18px 9px;
+}
+
+.Aboutrow-items img{
+    position: absolute;
+    left: -45px;
+}
+
+.Aboutrow h1, .Aboutdesc h1{
+    font-size: 5em;
+
+}
+.Aboutslider-img{
+    width: 70%;
+    height: 320px;
+    position:relative;
+    left: 10%;
+    top:5%;
+    transform: translate(-20%,30%);
+    background-image: url("/public/Images/p2.jpg");
+    background-size: 30% 50%;
+    background-repeat: no-repeat;
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0%{background-image: url("/public/Images/p2.jpg");}
+    35%{background-image: url("/public/Images/p3.jpg");}
+    75%{background-image: url("/public/Images/p1.jpg");}
+}
+
+@media (min-width:805px) and (max-width:1440px){
+    
+   
+    .Aboutsecond-para{
+        width: 100%;
+        padding: 23px 0;
+    }
+    
+    .Aboutsecond-para .Aboutcol-items-left{
+        padding: 10px 14px;
+    }
+  
+    
+    .Aboutthird-para{
+        padding: 34px 0;
+    }
+
+    .Aboutthird-para .Aboutcol-items-right img{
+        
+        width: 100%;
+        padding-top: 23%;
+        border-top-left-radius: 65%;
+    }
+
+    .Aboutfourth-para .Aboutitems .Aboutcol-items-left img{
+        width: 100%; 
+        padding-top: 23%;
+        border-top-right-radius: 67%;  
+    }
+
+    .Aboutfirst-para .Aboutcol-items-right img{
+        border-radius: 50%;  
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width:805px) {
+
+    .Aboutfirst-para .Aboutitems{
+        display: flex;
+        background-color: #ccccff;
+        flex-direction: column;
+    }
+
+    .Aboutsecond-para{
+        width: 100%;
+    }
+
+    
+    .Aboutfirst-para .Aboutcol-items-right img{
+      display: none;
+    }
+
+    .Aboutthird-para .Aboutcol-items-right img{
+        
+        width: 100%;
+     position: relative;
+     padding-top: 23%;
+        border-top-left-radius: 65%;
+    }
+
+    .Aboutgif{
+    display: none;
+    }
+
+    .Aboutfourth-para .Aboutitems .Aboutcol-items-left img{
+        width: 100%;
+        position: relative;
+        padding-top: 23%;
+        border-top-right-radius: 67%;  
+    }
+
+
+    .Aboutsecond-para{
+        width: 100%;
+        padding: 23px 0;
+    }
+    .Aboutsecond-para .Aboutitems{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    .Aboutsecond-para .Aboutcol-items-left{
+        padding: 12px ;
+    }
+    
+    .Aboutsecond-para .Aboutcol-items-right{
+        padding: 12px 24px;
+        letter-spacing:1.4px;
+        line-height: 1.3; 
+        text-align: justify;
+    }
+    
+    .Aboutthird-para{
+        padding: 34px 0;
+    }
+    
+    .Aboutthird-para .Aboutitems{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Aboutthird-para .Aboutitems .Aboutcol-items-left{
+        padding: 18px;
+       
+        width: 100%;
+    }
+    
+    
+    .Aboutfourth-para{
+        padding: 34px 0;
+    }
+
+
+    .Aboutfourth-para .Aboutitems{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .Aboutfourth-para .Aboutrow .Aboutcol-items-right{
+      
+        padding:  18px;
+        width: 100%; 
+    }
+    
+    .Aboutfifth-para{
+        padding-bottom: 0px;
+        background-color: #ccccff;
+    
+    }
+    
+    
+    .Aboutfifth-para .Aboutitems .Aboutslider{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Aboutfifth-para .Aboutitems .Aboutcol-items-left{
+       
+        position: absolute;
+        left: 0px;
+        padding: 0;
+    }
+    
+    .Aboutfifth-para .Aboutdesc{
+      
+        padding: 5px 12px;
+        position: relative;
+        line-height:1.4;
+        text-align: left; 
+    }
+    
+    .Aboutcol-items-left{
+    position: relative;
+    text-align: justify;
+    padding-left: 9%;
+    width: 100%;
+    }
+    
+    .Aboutcol-items-right{
+        position: relative;
+        width: 100%;
+        padding-right: 9%;
+        margin: 5px;
+        text-align: justify;
+    }
+  
+     .Aboutrow-1 p{
+        
+        padding-left: 0px;
+    }
+    
+    .Aboutrow{
+        padding-left: 0px;
+    }
+
+ .Aboutrow h1,  .Aboutdesc h1{
+        font-size: 3rem;
+    }
+    
+}

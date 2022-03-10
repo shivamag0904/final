@@ -1,0 +1,145 @@
+.CustomermySlide {
+    list-style: none;
+    animation: scrolling 10s infinite linear;
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    
+    }
+    
+    /* @keyframes scrolling {
+        0% {
+        transform: translateY(60%);
+    
+        }
+        100% {
+        transform: translateY(0%);
+        }
+    } */
+    .Customercontainer h1{
+        text-align: center;
+    }
+    
+    .customer p{
+        text-align: center;
+        font-size: 34px;
+    }
+    
+    .customer p div{
+    font-weight: bold;
+    }
+    
+    .customer{
+        padding-top:14px ;
+    }
+    .customerUl{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .customerUl li{
+        margin: 15px;
+    }
+    
+    .Customermiddle {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .Customertraining p{
+        text-align: center;
+        font-size: 34px;
+        padding-bottom: 18px;
+    }
+    
+    .Customertraining p div{
+        padding-top: 10px;
+        font-weight: bold;
+    }
+    
+    .Customercard{
+        display: flex;
+        flex-direction: row;
+        background-color: #ccccff;
+        border-radius: 15px;
+        border:2px solid black;
+    
+    }
+    
+    
+    .Customercard .Customercard-box{
+        background-color: whitesmoke;
+        margin: 24px;
+        padding: 18px;
+        border-radius: 23px;
+        box-shadow: 10px 5px 8px #a0a0f0;
+    }
+   
+    
+    .CustomermySlide img{
+        max-width: 140px;
+    }
+    
+    .Customerslider{
+        height: 600px;
+        position: relative;
+    }
+      .Customerslider-img{
+        width: 70%;
+        height: 420px;
+        position:relative;
+        left: 50%;
+        top:5%;
+        transform: translate(-50%,30%);
+        background-image: url("/public/Images/show1.PNG");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        animation: customerslider 5s infinite linear;
+    }
+    
+    @keyframes customerslider {
+        0%{background-image: url("/public/Images/show1.PNG");}
+        35%{background-image: url("/public/Images/show2.PNG");}
+        75%{background-image: url("/public/Images/show3.PNG");}
+    }
+    
+    @media screen and (max-width:900px){
+        .customerUl{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    
+        .CustomermySlide {
+            list-style: none;
+            animation: scrolling 10s infinite linear;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            }
+    
+            .CustomermySlide img{
+                max-width: 50px;
+            }
+            
+            .Customercard{
+                flex-wrap: wrap; 
+            }
+    
+            .Customerslider-img{
+                width: 100%;
+                
+            }
+    }
+    
+    @media screen and (max-width:1126px){
+        .Customercard{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        
+        }
+    }
