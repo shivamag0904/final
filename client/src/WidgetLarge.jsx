@@ -43,7 +43,7 @@ export default function WidgetLarge() {
           {/* <td className="widgetLgButton Completition mt-2">Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">11</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger mt-2">Appear for Test</button>
    </td></Link>  */}
         </tr>
@@ -57,7 +57,7 @@ export default function WidgetLarge() {
           {/* <td className="widgetLgButton NotComplete mt-2">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">12</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link>  */}
         </tr>
@@ -72,7 +72,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link> */}
     </tr>
@@ -87,7 +87,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link>     */}
    </tr>
@@ -102,7 +102,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link> */}
         </tr>
@@ -117,7 +117,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link> */}
         </tr>
@@ -132,7 +132,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"></td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link>      */}
    </tr>
@@ -148,7 +148,7 @@ export default function WidgetLarge() {
         {/* <td className="widgetLgButton NotComplete">Not Completed</td> */}
        <td className='widgetLgCompletion'><span class="badge bg-success">Completed</span></td>
 
-          <td className="widgetLgDuration">10</td>
+          <td className="widgetLgDuration"> </td>
           {/* <Link to="/course1"><td ><button type="button" className="btn btn-outline-danger  mt-2">Appear for Test</button>
    </td></Link>      */}
     </tr>
