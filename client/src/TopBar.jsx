@@ -1,8 +1,10 @@
 
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './topBar.css';
 import { Link } from 'react-router-dom';
 export default function TopBar() {
+ 
+ 
   return (
   <div className='topbar'>
     <div className='topbarwrapper'>
@@ -28,7 +30,7 @@ export default function TopBar() {
        <i className='fas fa-user'></i>
         </a>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a className="dropdown-item" href="#">User</a></li>
+          <li><a className="dropdown-item" href="#">Admin</a></li>
           <li><a className="dropdown-item" href="#">My courses</a></li>
           <li><Link className="dropdown-item" to="/logout">Logout</Link></li>
         </ul>

@@ -28,6 +28,24 @@ exports.registerUser = async (req, res) => {
         // username: Math.random().toString(),
       });
 
+      // const accessToken = jwt.sign(
+      //   {
+      //     "UserInfo":{
+      //       "name": user.name,
+      //       "role": role
+      //     }
+      //   },
+      //   process.env.accessToken,
+      //   {expiresIn: "30s"}
+      // )
+      // const refreshToken = jwt.sign(
+      //   {
+      //     "username": user.name
+
+      //   },
+      //   process.env.refreshToken,
+      //   {expiresIn: '1d'}
+      // )
       const userRegistered = await user.save();
       if (userRegistered) {
         res.status(201).json({ message: "user registered successfully" });
@@ -53,7 +71,7 @@ exports.loginUser = async (req, res) => {
     if (userLogin) {
       const isMatch = await bcrypt.compare(password, userLogin.password);
       token = await userLogin.generateAuthToken();
-      console.log(token);
+      // console.log(token);
 
       if (!isMatch) {
         res.status(400).json({ message: "Invalid Credientials" });
@@ -63,7 +81,8 @@ exports.loginUser = async (req, res) => {
           httpOnly: true,
         });
 
-        res.json({ message: "user signin successfully" });
+        res.json({ message: "user signin successfully" , role: userLogin.role, name: userLogin.name});
+      
       }
     } else {
       res.status(400).json({ error: "Invalid Credientials" });
@@ -94,7 +113,7 @@ exports.forgotPassword = async (req, res) => {
 exports.updatePassword = async (req, res) => {
 
 
-    const {email, otp,password}= req.body;
+    const {email, otp,password} = req.body;
     if(!email || !otp || !password){
       return  res.status(400).json({
             error: "please send email and otp and password"
@@ -129,7 +148,18 @@ exports.updatePassword = async (req, res) => {
 };
 
 exports.logout = (req, res) => {
-  console.log(`Hello my logout page`);
+  // console.log(`Hello my logout page`);
   res.clearCookie("jwtoken", { path: "/ " });
   res.status(200).send("User logout");
 };
+
+// exports.loginUser = async(req,res, next)=>{
+//   try{
+//     let _id = req.params.id;
+//     const user = await User.findById(id);
+//     res.status(201).send(user);
+
+//   }catch(err){
+//     res.status(400).send(err.message);
+//   }
+// };

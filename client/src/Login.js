@@ -36,13 +36,14 @@ import { Outlet, Link , useNavigate} from "react-router-dom";
 import Axios from "axios";
 import HomeDashboard from "./HomeDashboard";
 import Home from "./Home";
+
 // import Dashboard from './Dashboard';
 const Login = () => {
 
     const navigate = useNavigate();
     const [email,setEmail]= useState('');
     const [password,setPassword] = useState('')
-
+    // const [role, setRole] = useState('');
     // const [role, setRole] = useState(" admin");
     // Axios.defaults.withCredentials = true;
 
@@ -60,6 +61,7 @@ const Login = () => {
     const loginUser = async(e) =>{
     
         e.preventDefault();
+        
         const res = await fetch('/signin',{
 
             method:"POST",
@@ -69,27 +71,34 @@ const Login = () => {
             body: JSON.stringify({
                 email, password
             })
-        });
-        const data = res.json();
-         if(res.status === 400 || !data){
-             window.alert("Invalid Credentials");
-         }else{
-             window.alert("Login Successfull");
-             
-             navigate('/HomeDashboard');
-            
-            
-         }
+        }).then(res=> res.json())
+        .then(result=>  {if(result.status === 400 ){
+          window.alert("Invalid Credentials");
+      }else{
+          window.alert("Login Successfull");
+         if(result.role === "user") 
+         
+         {
+          navigate('/UserDashboard');
+
+        } 
+         else{
+          navigate('/HomeDashboard');
+
+
+         }        
+         
+      }
+      // console.log(result)
+    });
+        
+        // const data = res.json();
+        
     }
   return <>
   <div className='container my-5 rounded p-3' style={{width:"400px",backgroundColor:"grey"}} >
   <form method='POST'>
-  <div className='header '>
-  
-    <Link  to='/HomeDashboard'>User</Link>
-    <Link to='/course1'>admin</Link>
-
-  </div>
+ 
         <div className="mb-3">
           <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
           <input type="email" className="form-control" id="exampleInputEmail1" name="email" value={email} onChange ={(e) => setEmail(e.target.value)} aria-describedby="emailHelp" />

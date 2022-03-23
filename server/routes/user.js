@@ -4,9 +4,11 @@ const router = express.Router();
 const { registerUser, loginUser, forgotPassword, logout, updatePassword } = require("../controllers/userController");
 
 router.post("/register",registerUser);
+router.get("/register",registerUser);
+
 
 router.post("/signin", loginUser);
-
+// router.get("/signin",loginUser);
 
 router.post("/forgot",forgotPassword)
 

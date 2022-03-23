@@ -28,6 +28,10 @@ import AddCalender from './AddCalender';
 import Logout from './Logout';
 import OtpForm from './OtpForm';
 import Quiz from './Quiz';
+import UserDashboard from './UserDashboard';
+// import AdminPrivateRoute from './AdminPrivateRoute';
+
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -41,11 +45,14 @@ export default function App() {
           <Route path="action" element={<Action />} />
         <Route path="newcourse" element={<UploadFile/>}/>
           <Route path="anotheraction" element={<AnotherAction />} />
+          <Route path="customer" element={<Customer />} />
+
+           <Route path='userdashboard' element={<UserDashboard/>}/>
           <Route path="homedashboard" element={<HomeDashboard/>}/>
+
           <Route path="newuser" element={<NewUser/>}/>
           <Route path="courselist" element={<CourseList/>}/>
           <Route path="userlist" element={<UserList/>}/>
-          <Route path="customer" element={<Customer />} />
           <Route path="register" element={<Register/>}/>
           <Route path='course1/:id' element={<Course1/>}/>
           <Route path='addcalender' element={<AddCalender/>}/>

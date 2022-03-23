@@ -93,6 +93,7 @@ router.post("/admin/signin",async (req, res) => {
     const userLogin = await User.findOne({ email: req.body.email });
     // console.log(userLogin);
     if (userLogin) {
+      const roles = Object.values(userLogin.role);
       const isMatch = await bcrypt.compare(password, userLogin.password);
 
       token = await userLogin.generateAuthToken();

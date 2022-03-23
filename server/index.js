@@ -1,3 +1,4 @@
+
 "use strict";
 const dotenv = require("dotenv").config({ path: "./config.env" });
 const express = require("express");
@@ -39,9 +40,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // routes
 // app.use("/api", fileRoutes.routes);
-app.use("/",userRoutes);
+app.use("/api",userRoutes);
 app.use("/api",tutorialRoutes);
-
+app.use("/",userRoutes);
 
 
 // TODO: rotes 

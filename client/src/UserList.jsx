@@ -11,7 +11,7 @@ import './UserList.css';
 
 const InitalRowData = [
     {emply_Id:'234', fullname: 'Anil', location: 'Uttar Pardesh', department: 'Finance',gender:'M',phone:'90657849002',email:'anil99@gmail.com',status:'Yes' },
-    {emply_Id:'294', fullname: 'Gunjan', location: 'Madhya Pardesh', department: 'Automation',gender:'F',phone:'800944094',email:'gunjan809@gmail.com',status:'No' },
+    {emply_Id:'294', fullname: 'shivam', location: 'Uttar Pardesh', department: 'Automation',gender:'M',phone:'856356384',email:'shivam@gmail.com',status:'No' },
     {emply_Id:'214', fullname: 'Omansh', location: 'Uttrakhand', department: 'Software Developer',gender:'M',phone:'477948094',email:'omansh123@gmail.com',status:'No' },
     {emply_Id:'254', fullname: 'Ravi', location: 'Haryana', department: 'Business Development',gender:'M',phone:'834049444',email:'ravi199@gmail.com',status:'No' },
     {emply_Id:'224', fullname: 'Saeed', location: 'Otty', department: 'Consultancy',gender:'M',phone:'94089578329',email:'saeed123@gmail.com',status:'Yes'}
