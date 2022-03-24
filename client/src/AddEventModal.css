@@ -1,0 +1,28 @@
+.addEventLabel {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 9px;
+  padding-left: 12px;
+}
+
+.addEventInput {
+  width: 80%;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 18px;
+  margin: 10px auto;
+  outline: none;
+}
+
+.addEventBtn{
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border:3px solid black;
+    border-radius: 12px;
+    color: white;
+    margin: 10px auto;
+    background-color:#0d6efd;
+    cursor: pointer;
+}

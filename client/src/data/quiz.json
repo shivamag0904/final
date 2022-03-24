@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "question" : "Q1. What does APQP stand for?",
+            "choices" : ["a). Advanced Product Quality Planning.", "b). Advanced Planning for Quality of Product."," c). Advanced Planning for Quality of Production.", " d) None of the Above."],
+            "answer": "b). Advanced Planning for Quality of Production."
+        },
+        {
+            "question" : "Q2. Control plan should cover -",
+            "choices" : ["a). Receipt Stage", "b). Final Inspection Stage.","c). both a and b.", "d). From Receipt to Dispatch."],
+            "answer": "c). both a and b."
+        },
+        {
+            "question" : "Q3. Objectives of control chart -",
+            "choices" : ["a). To detect Assignable or Special causes.", "b). To maintain the process capability.","c). To indicate the opportunity for improvement and confirm the improvement.", "d). All of the above."],
+            "answer": "a). To detect Assignable or Special causes."
+        },
+        {
+            "question" : "Q4. What are the 3 phases that APQP covers?",
+            "choices" : ["a). Development, Industrialization and Product Launch.", "b). Development, Production and Product Launch.","c). Development, Industrialization and Production.", "d). Production, Product Launch and Industrialization."],
+            "answer": "d). Production, Product Launch and Industrialization."
+        },
+        {
+            "question" : "Q5. Which standard deals with APQP?",
+            "choices" : ["a). AS EN JISQ 9006.", "b). AS EN JISQ 9145."," c). AS EN SJAC 9145.", "d). AS EN JISQ 9045."],
+            "answer": "d). AS EN JISQ 9045."
+        },
+        {
+            "question" : "Q6. Which step is not included in the APQP process?",
+            "choices" : ["a). Process Flow Diagram approval.", "b). PPAP"," c). Company IT process.", "d). Bill of Material approval."],
+            "answer": "d). Bill of Material approval."
+        },
+        {
+            "question" : "Q7. The MSA & SPC are carried out during –",
+            "choices" : ["a). Product Design & Development.", "b). Product & Process Validation.","c). Process Design & Development.", "d). None of the Above."],
+            "answer": "d). None of the Above."
+        }
+        ,
+        {
+            "question" : "Q8. Which step is not included in the APQP process?",
+            "choices" : [" a). Process Flow Diagram approval.", "b) PPAP","c). Company IT process.", "d). Bill of Material approval."],
+            "answer": "d). Bill of Material approval."
+        }
+        ,
+        {
+            "question" : "Q9. Control plan to be prepared for –",
+            "choices" : ["a).  Prototype, Pre-Launch, Production.", "b). Receipt Only.","c). Receipt, In Process & Final.", "d). None of the Above."],
+            "answer": "b). Receipt Only."
+        }
+        ,
+        {
+            "question" : "Q10. FMEA can be used to –",
+            "choices" : ["a). Eliminate design weaknesses.", "b). Solve engineering problems.","c). Identify possibilities for lean production.", "d). Determine root cause."],
+            "answer": "d). Determine root cause."
+        }
+        ,
+        {
+            "question" : "Q11. How many phases compose APQP?",
+            "choices" : ["a). 3", "b). 5", "c). 7","d). 9"],
+            "answer": "a). 3"
+        }
+    ]
+}

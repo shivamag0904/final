@@ -1,0 +1,41 @@
+.app-container{
+    flex: 4;
+}
+.skillTable{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skillth,.skilltd{
+    border: 1px solid #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+}
+.skillth{
+    background-color: rgb(250, 188, 117);
+}
+
+.skilltd{
+    background-color: rgb(253, 236, 205);
+}
+
+.skillform{
+    display:flex;
+    gap:5px;
+    width: 100%;
+    padding: 34px;
+}
+.skillform input{
+    width: 100%;
+    font-size: 18px;
+}
+.skillform td:last-child{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skillform *{
+    font-size: 28px;
+}

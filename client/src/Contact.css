@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Contacttop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Contacttop img{
+    width: 100%;
+    height:300px;
+}
+
+.Contacttop h1{
+    position: absolute;
+    color: white;
+    font-size: 54px;
+}
+
+.Contactmiddle{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 54px;
+}
+
+.Contactmiddle .Contactleft{
+    padding-left: 95px;
+    position: relative;
+    letter-spacing: 1.4px;
+    line-height: 1.3; 
+    width: 40%;
+}
+
+.Contactmiddle .Contactleft p{
+    font-size: 18px;
+    color: rgb(56, 53, 53);
+    margin: 23px 10px;
+}
+.contactIcons{
+    padding-left: 15px;
+    padding-top: 10px;
+    color: brown;
+}
+
+.Contactmiddle .Contactleft h3{
+    padding: 0px;
+    font-size: 35px;
+}
+
+.Contactmiddle .Contactright{
+    left: 300px;
+    position: relative;
+    width: 40%;
+    line-height: 1.3; 
+    background-color: #ccccff;
+    border-radius: 23px;
+}
+
+.contactform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contactInput{
+    width: 80%;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 10px auto;
+    outline: none;
+}
+
+.contactLabel{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 9px;
+    padding-left: 12px;
+}
+.contactBtn{
+    width: 80%;
+    padding: 12px;
+    font-size: 18px;
+    border:3px solid black;
+    border-radius: 12px;
+    color: white;
+    margin: 10px auto;
+    background-color:#0d6efd;
+    cursor: pointer;
+}
+
+/* .bottom{
+    text-align: center;
+}
+
+.bottom h2{
+    font-size: 45px;
+    margin: 34px;
+}
+
+.bottom button{
+    width: 10%;
+    border-radius: 24%;
+    margin: 24px;
+} */
+
+/* @media(prefers-color-scheme:dark){
+    iframe{
+        background-color: black;
+    }
+} */
+@media screen and (max-width:1150px){
+    .Contactmiddle{
+       display: block;
+       padding: 5px 10px; 
+    }
+
+    .Contactmiddle .Contactleft{
+        padding: 5px 10px; 
+        width: 100%;
+    }
+    
+    
+iframe{
+    display: none;
+}
+    
+    .Contactmiddle .Contactright{
+        left: 0;
+        position: relative;
+        width: 100%;
+    }
+   
+}
