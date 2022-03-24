@@ -112,7 +112,7 @@ const Login = () => {
           <input type="checkbox" className="form-check-input" id="exampleCheck1" />
           <label className="form-check-label" htmlFor="exampleCheck1">Remember Password</label>
         </div>
-        <div  className='my-2 text-secondary' ><Link to="/register">Sign Up</Link></div>
+        {/* <div  className='my-2 text-secondary' ><Link to="/register">Sign Up</Link></div> */}
         <Link style={{textDecoration:'none'}} to="/dashboard"><button
                     className="btn btn-outline-primary ml-3"
                     type="submit" onClick={loginUser} >

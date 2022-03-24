@@ -1,11 +1,13 @@
 import './NewUser.css';
 import SideBar from './SideBar';
 import TopBar from './TopBar';
+import Register from './Register'
 export default function NewUser() {
   return (
     <><TopBar /><div className='dashboardContainer'>
           <SideBar />
-          <div className='newUser'>
+          <Register/>
+          {/* <div className='newUser'>
               <h1 className='newUserTitle'>New User</h1>
               <form action='' className='newUserForm'>
                   <div className='newUserItem'>
@@ -55,7 +57,7 @@ export default function NewUser() {
                   </div>
                   <button className='newUserButton'>Create</button>
               </form>
-          </div>
+          </div> */}
       </div></>
   )
 }

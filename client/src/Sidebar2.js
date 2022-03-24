@@ -11,7 +11,7 @@ export default function SideBar() {
           <Link to='/homedashboard' style={{textDecoration:'none',color:'#606060'}}>   <li className="sideBarListItem active"><i className="fas fa-home sideBarIcon" />Home</li></Link>
           <Link to='/courselist' style={{textDecoration:'none',color:'#606060'}}>  <li className="sideBarListItem active"><i className="fas fa-book sideBarIcon"/>My Courses</li></Link>
           <Link to='/results' style={{textDecoration:'none',color:'#606060'}}>  <li className="sideBarListItem active"><i className="fas fa-file-alt sideBarIcon"/>My Report</li></Link>
-          <Link to='/register' style={{textDecoration:'none',color:'#606060'}}> <li className="sideBarListItem active"><i className="fas fa-users sideBarIcon" />Users</li></Link>
+          {/* <Link to='/register' style={{textDecoration:'none',color:'#606060'}}> <li className="sideBarListItem active"><i className="fas fa-users sideBarIcon" />Users</li></Link> */}
           <Link to='/addcalender' style={{textDecoration:'none',color:'#606060'}}> <li className="sideBarListItem active"><i className="far fa-calendar sideBarIcon" />Calendar</li></Link>
           </ul>
         </div>
